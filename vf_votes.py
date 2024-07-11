@@ -1,9 +1,8 @@
 import pandas as pd
 
 # Load the CSV file
-csv_file = 'Private-PSR-Vote-History-C0-2024-07-01.csv'  # Replace with your CSV file name
+csv_file = 'Private-PSR-Vote-History-C0-2024-07-01.csv'  # Replace with CSV file name
 
-# Read the CSV file, skipping bad lines
 try:
     df = pd.read_csv(csv_file, on_bad_lines='skip')
     # Ensure that the column E (5th column, zero-indexed) exists
